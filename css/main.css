@@ -430,7 +430,11 @@ html, body {
 	}
 
 	.header__title strong {
-		font-size: 40px;
+		font-size: 38px;
+	}
+
+	.header__text {
+		font-size: 15.5px;
 	}
 
 	/* Nav */
@@ -486,6 +490,7 @@ html, body {
 
 	.footer {
 		padding: 40px 0 30px;
+		
 	}
 
 	.footer__wraper {
@@ -506,5 +511,10 @@ html, body {
 		width: 28px;
 	}
 
+	[data-aos] {
+    pointer-events: auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 
 }
