@@ -94,6 +94,8 @@ html, body {
 
 .nav-list {
 	display: flex;
+	flex-wrap: wrap;
+	row-gap: 5px;
 	align-items: center;
 	column-gap: 40px;
 	font-size: 16px;
@@ -237,6 +239,7 @@ html, body {
 
 .projects {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap; /* Перенос карточки на наступний ряд */
 	column-gap: 30px; /* Відступ між колонками */
 	row-gap: 30px; /* Відступ між рядками */
@@ -341,3 +344,82 @@ html, body {
 	margin-left: 0.5em; /* Якщо буде більше 1 абзацу, буде відступ */
 }
 
+@media (max-width: 620px) { /* Вказуємо як буде відображатись сторінка якшо екран буде меньше 620 пікселів */
+	
+	/* Header */
+
+	.header {
+    min-height: unset;
+	}
+
+	.header__title {
+		font-size: 30px;
+	}
+
+	.header__title strong {
+		font-size: 40px;
+	}
+
+	/* General */
+
+	.section {
+		padding: 40px 0;
+	}
+	
+	.title-1 {
+		margin-bottom: 30px;
+		font-size: 40px;	
+	}
+
+	.title-2 {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	/* Projects */
+
+	.project__title {
+		font-size: 22px;
+	}
+
+	/* Project page */
+
+	.project-details__desc {
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+
+	/* Content List */
+
+	.content-list {
+		row-gap: 20px;
+	}
+	
+	.content-list__item {
+		font-size: 16px;
+	}
+
+	/* Footer */
+
+	.footer {
+		padding: 40px 0 30px;
+	}
+
+	.footer__wraper {
+		row-gap: 20px;
+	}
+	
+	.copyright {
+		font-size: 15px;
+	}
+
+	/* Social */
+
+	.social {
+		column-gap: 20px;
+	}
+
+	.social__item {
+		width: 28px;
+	}
+}
