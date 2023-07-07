@@ -324,6 +324,11 @@ html, body {
 	border-radius: 10px;
 }
 
+.project__image__soon {
+	border-radius: 10px;
+	filter: blur(3px);
+}
+
 .project__title {
 	padding: 15px 20px 25px; /* зверху, ліво + право, знизу*/
 	font-weight: 700;
