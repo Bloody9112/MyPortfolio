@@ -1,6 +1,6 @@
 const btnDarkMode = document.querySelector(".dark-mode-btn");
 
-//Перевірка темної теми на рівні системних налаштувань
+// Перевірка темної теми на рівні системних налаштувань
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ) {
 	btnDarkMode.classList.add("dark-mode-btn--active");
   document.body.classList.add("dark");
